@@ -1,0 +1,70 @@
+body {
+    background: beige;
+    font-family: monospace;
+}
+
+main {
+    background: white;
+    max-width: 800px;
+    margin: 30px auto 0 auto;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p.info {
+    text-align: center;
+    color: green;
+    font-style: italic;
+}
+
+#dogs {
+    border: 1px solid gray;
+    background: gray;
+    margin-bottom: 30px;
+}
+
+#dogs p {
+    text-align: center;
+    color: white;
+}
+
+#dogs > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 100px 1fr;
+    gap: 1px;
+}
+
+#dogs > div:first-child {
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#dogs > div div {
+    padding: 5px 10px;
+    background: beige;
+}
+#dogs > div:nth-child(even) div {
+    background: #e3e3b8;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+form input {
+    padding: 5px;
+}
+
+form button {
+    padding: 5px;
+    grid-row: 2;
+    grid-column: 1 / span 4;
+    cursor: pointer;
+}
